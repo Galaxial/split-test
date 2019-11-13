@@ -4,44 +4,113 @@ Survey
     .applyTheme("default");
 
 var json = {
-    title: "American History",
+    title: "Before we can recieve your application, you'll need to do a quick survey:",
     pages: [
         {
             questions: [
                 {
                     type: "radiogroup",
-                    name: "civilwar",
-                    title: "When was the Civil War?",
+                    name: "numberofpages",
+                    title: "How many pages do you feel is ideal for a quiz?",
                     choices: [
-                        "1750-1800", "1800-1850", "1850-1900", "1900-1950", "after 1950"
+                        "All questions on one page", "Two questions per page", "I prefer the whole quiz be served in a series of pop up alerts", "No questions per page, my data is my own"
                     ],
-                    correctAnswer: "1850-1900"
+                    correctAnswer: "Two questions per page"
+                },
+                {
+                    type: "radiogroup",
+                    name: "stolenproperty",
+                    title: "How many times in the past three weeks have you been fired for stealing company property?",
+                    choices: [
+                        "Zero to One times", "Two to Four times", "Five to Nine times", "I am currently incarcerated for theft of company property"
+                    ],
+                    correctAnswer: "I am currently incarcerated for theft of company property"
                 }
             ]
         }, {
             questions: [
                 {
                     type: "radiogroup",
-                    name: "libertyordeath",
-                    title: "Who said 'Give me liberty or give me death?'",
-                    choicesOrder: "random",
+                    name: "alignment1",
+                    title: "What would you describe your moral alignment as? (1 of 2)",
                     choices: [
-                        "John Hancock", "James Madison", "Patrick Henry", "Samuel Adams"
+                        "Good", "Neutral", "Evil"
                     ],
-                    correctAnswer: "Patrick Henry"
+                    correctAnswer: "Neutral"
+                },
+                {
+                    type: "radiogroup",
+                    name: "alignment2",
+                    title: "What would you describe your moral alignment as? (2 of 2)",
+                    choices: [
+                        "Lawful", "Neutral", "Chaotic"
+                    ],
+                    correctAnswer: "Neutral"
                 }
             ]
         }, {
             questions: [
                 {
                     type: "radiogroup",
-                    name: "magnacarta",
-                    title: "What is the Magna Carta?",
-                    choicesOrder: "random",
+                    name: "assimilation",
+                    title: "Assimilation into our company is the process of:",
                     choices: [
-                        "The foundation of the British parliamentary system", "The Great Seal of the monarchs of England", "The French Declaration of the Rights of Man", "The charter signed by the Pilgrims on the Mayflower"
+                        "A great opportunity to grow with us and our family", "A stable source of employment and a point of pride", "Borg Integration"
                     ],
-                    correctAnswer: "The foundation of the British parliamentary system"
+                    correctAnswer: "A great opportunity to grow with us and our family"
+                },
+                {
+                    type: "radiogroup",
+                    name: "rightanswer",
+                    title: "The correct answer to this question is:",
+                    choices: [
+                        "A", "B", "C","D","B and C"
+                    ],
+                    correctAnswer: "B and C"
+                }
+            ]
+        }, {
+            questions: [
+                {
+                    type: "radiogroup",
+                    name: "insanity",
+                    title: "The scientific definition of insanity is described as:",
+                    choices: [
+                        "Doing the same thing over and over again, expecting a different outcome", "Doing the same thing over and over again, expecting a different outcome",
+                         "Doing the same thing over and over again, expecting a different outcome", "Doing the same thing over and over again, expecting a different outcome",
+                         "Doing the same thing over and over again, expecting a different outcome", "Doing the same thing over and over again, expecting a different outcome"
+                    ],
+                    correctAnswer: "Doing the same thing over and over again, expecting a different outcome"
+                },
+                {
+                    type: "radiogroup",
+                    name: "whatoftheboss",
+                    title: "What do you think about the boss, here at business company?",
+                    choices: [
+                        "he seems pretty cool, I like the guy", "I felt he was very professional, and he has earned my respect", "I feel as though a duel with him would present quite a challenge, possibly resulting in my untimely demise"
+                    ],
+                    correctAnswer: "I feel as though a duel with him would present quite a challenge, possibly resulting in my untimely demise"
+                }
+            ]
+        }, {
+            questions: [
+                {
+                    type: "radiogroup",
+                    name: "loremipsum",
+                    title: "Lorem ipsum dolor ______",
+                    choices: [
+                        "dans temor", "sit amet", "gam etra", "be more creative"
+                    ],
+                    correctAnswer: "sit amet"
+                },
+                {
+                    type: "radiogroup",
+                    name: "canyoutell",
+                    title: "Can you tell whether I'm running out of fake question ideas yet?",
+                    choices: [
+                        "Yes", "No", "Not until now", "It was pretty obvious"
+                    ],
+                    correctAnswer: "No"
                 }
             ]
         }
